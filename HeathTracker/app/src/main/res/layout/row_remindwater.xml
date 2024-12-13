@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/switchRemindWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewWater"
+        android:layout_alignBottom="@+id/textViewWater"
+        android:layout_marginStart="200dp"
+        android:layout_toEndOf="@+id/textViewWater"
+        android:scaleX="2"
+        android:scaleY="2"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewWater"
+        android:drawableEnd="@drawable/delete"
+        android:layout_alignStart="@+id/textViewWater"
+        android:layout_marginTop="40dp"
+        android:text="Xóa"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
